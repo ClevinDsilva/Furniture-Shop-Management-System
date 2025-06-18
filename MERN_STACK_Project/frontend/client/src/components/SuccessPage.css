@@ -1,0 +1,78 @@
+/* Success Page Styles */
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .success-card {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    transition: 0.3s;
+  }
+  
+  .success-card:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: #28a745;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .delivery-date {
+    font-size: 22px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  .home-btn {
+    background: #28a745;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .home-btn:hover {
+    background: #218838;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 600px) {
+    .success-card {
+      padding: 30px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p, .delivery-date {
+      font-size: 16px;
+    }
+  
+    .home-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  

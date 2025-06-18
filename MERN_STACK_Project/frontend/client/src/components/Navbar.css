@@ -1,0 +1,302 @@
+/* === Top Bar === */
+.top-bar {
+  background: linear-gradient(135deg, #fdf9f7, #f3f0ee);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 40px;
+  gap: 15px;
+  z-index: 999 ;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  
+}
+
+.top-bar-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+/* ✅ Logo Section */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: 0.3s;
+}
+
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.logo-container h2 {
+  font-size: 30px;
+  color: #333;
+  transition: 0.3s;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ✅ Buttons in Row */
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* ✅ Individual Button Styling */
+.btn-home {
+  background: #007bff;
+}
+
+.btn-products {
+  background: #28a745;
+}
+
+.btn-cart {
+  background: #ffc107;
+}
+
+.btn-orders {
+  background: #dc3545;
+}
+
+.btn-home:hover {
+  background: #0056b3;
+}
+
+.btn-products:hover {
+  background: #218838;
+}
+
+.btn-cart:hover {
+  background: #ffb300;
+}
+
+.btn-orders:hover {
+  background: #c82333;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 8px 15px;
+  background: #f4f4f4;
+  transition: 0.3s;
+  width: 250px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  background: transparent;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  background: #fff;
+}
+
+.search-bar button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+
+.search-bar button:hover {
+  background: #0056b3;
+}
+
+/* Add some space around the search bar on smaller screens */
+@media (max-width: 600px) {
+  .search-bar {
+    width: 80%;
+  }
+}
+
+
+/* ✅ Dark Mode */
+.navbar-container.dark {
+  background: #333;
+  color: white;
+}
+/* === Main Navbar Styling === */
+.navbar-container {
+  position: fixed;
+  top: 68px; /* Positioned below the top bar */
+  left: 0;
+  width: 100%;
+  background: rgb(248, 246, 245);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 800;
+  padding: 0px 0; /* Smaller navbar size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  height: calc(45vh - 120px); /* Adjust depending on navbar/footer height */
+  
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .navbar-container {
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode .btn {
+  background: #555;
+  color: white;
+}
+
+/* === Logo and Website Name === */
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.logo-container img {
+  width: 100px; 
+  height: 100px;
+  object-fit: cover;
+}
+
+.logo-container h2 {
+  font-size: 30px;
+  color: #0c0101;
+}
+
+.dark-mode .logo-container h2 {
+  color: white;
+}
+
+/* === Search Bar === */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  margin-bottom: 10px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-btn {
+  background: #ff6600;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background: #e9581a;
+}
+
+/* === Navigation Links === */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 22px;  /* Increased font size */
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 8px 10px;  /* Added padding for larger clickable area */
+  border-radius: 8px;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.nav-links li a:hover {
+  color: #ff6600;
+}
+/* ✅ Profile image in navbar */
+.navbar-profile-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid #007bff;
+  transition: 0.3s;
+}
+
+.navbar-profile-img:hover {
+  transform: scale(1.1);
+}
+/* Dark mode links */
+.dark-mode .nav-links li a {
+  color: white;
+}
+
+.dark-mode .nav-links li a:hover {
+  color: #ff6600;
+}
+
+/* === Mobile Responsive === */
+@media (max-width: 600px) {
+  .navbar-container {
+    padding: 15px;
+  }
+
+  .logo-container h2 {
+    font-size: 24px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .nav-buttons a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+/* ✅ Profile Image Styling in Navbar */
+.profile-icon {
+  width: 45px;               /* Set image width */
+  height: 45px;              /* Set image height */
+  border-radius: 50%;        /* Circular shape */
+  object-fit: cover;         /* Ensure image fits perfectly */
+  border: 2px solid #007bff; /* Blue border */
+  margin-right: 10px;        /* Space between icon and text */
+  transition: 0.3s;          /* Smooth hover effect */
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);     /* Slight zoom effect on hover */
+}

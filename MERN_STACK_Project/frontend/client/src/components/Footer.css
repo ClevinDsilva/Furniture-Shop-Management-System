@@ -1,0 +1,115 @@
+/* ✅ Footer Styling */
+.footer {
+  background: #f4f4f4;
+  color: #333;
+  padding: 40px 20px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ Footer container layout */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ✅ Individual footer sections */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+}
+
+/* ✅ Social Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #555;
+  font-size: 22px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+/* ✅ Footer bottom bar */
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  background: #e0e0e0;
+  color: #333;
+  font-size: 14px;
+}
+
+/* ✅ Dark Mode Styling */
+.dark-mode .footer {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .footer-section h3 {
+  color: #ff6600;
+}
+
+.dark-mode .footer-section ul li a,
+.dark-mode .footer-section p,
+.dark-mode .footer-bottom {
+  color: white;
+}
+
+.dark-mode .social-links a {
+  color: white;
+}
+
+.dark-mode .social-links a:hover {
+  color: #ff6600;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}

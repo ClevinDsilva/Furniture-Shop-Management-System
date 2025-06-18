@@ -1,0 +1,156 @@
+/* Reset and basics */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: antiquewhite;
+  /* background: url('./src/assets/fru.jpg') no-repeat center center fixed; */
+  background-size:cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Login Container Layout */
+.login-containers {
+  background: url('./src/assets/fru.jpg') no-repeat center center fixed;
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between items */
+  padding: 100px 500px 900px 600px;
+  max-height: 80vh; /* Adjust height as needed */
+  overflow-y:auto; /* Enable vertical scroll if content overflows */
+  box-sizing: border-box;
+  transition: 0ms; /* Optional background */
+  border-radius: 12px;
+  
+}
+
+/* Left Side: Form */
+.login-boxes {
+  flex: 1;
+  padding: 50px 100px 980px 100px;
+  background-color: white;
+}
+
+.login-title {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #2d2a2a;
+}
+
+input.form-control {
+  padding: 12px 15px;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background-color: #222;
+}
+
+/* Alert Styling */
+.alert {
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.alert-success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+/* Links */
+.login-links {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.login-link {
+  color: #556b2f;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 6px;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-box {
+    padding: 40px 30px;
+  }
+}
+/* Add to the existing login.css */
+
+.position-relative {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+.me-3{
+  margin-top: -1.3rem !important;
+
+}
+
+
+

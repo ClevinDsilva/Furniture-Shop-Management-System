@@ -1,0 +1,141 @@
+/* Payment Page Styles */
+.payment-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #f6d365, #fda085);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .payment-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    transition: 0.3s;
+  }
+  
+  .payment-card:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .payment-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .payment-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .payment-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+    background: #f9f9f9;
+  }
+  
+  .payment-option:hover {
+    border-color: #007bff;
+    transform: scale(1.05);
+  }
+  
+  .payment-option.selected {
+    border-color: #28a745;
+    background: #e9f5e9;
+  }
+  
+  .option-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .option-content img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .qr-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .qr-code {
+    width: 200px;
+    height: 200px;
+    margin: 15px auto;
+    display: block;
+  }
+  
+  .confirm-btn {
+    background: #ff9800;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+  }
+  
+  .confirm-btn:hover {
+    background: #f57c00;
+  }
+  
+  .confirm-btn.done {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .pay-btn {
+    background: #28a745;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .pay-btn:hover {
+    background: #218838;
+  }
+  
+  .mobile-payment-link {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .mobile-payment-link:hover {
+    background: #0056b3;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .qr-code {
+      display: none;
+    }
+  }
+  

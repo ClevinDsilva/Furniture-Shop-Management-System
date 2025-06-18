@@ -1,0 +1,134 @@
+/* Full-Page Background Image with Animation */
+.login-container {
+    height: 100vh;
+    width: 100vw; /* Ensure full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../src/assets/gr.jpg') no-repeat center center; */
+    background-size: cover; /* Cover entire viewport */
+    background-attachment: fixed; /* Keep image fixed while scrolling */
+    position: relative;
+    overflow: hidden;
+    margin: 0; /* Remove any default margin` */
+    padding: 0; /* Remove any default padding */
+  }
+  
+  /* Blur Overlay with Gradient Tint */
+  .login-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);  /* Dark overlay */
+      backdrop-filter: blur(6px);       /* Slight blur for depth */
+      z-index: 0;
+    }
+  
+  /* Login Box Styling */
+  .login-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    width: 420px;
+    text-align: center;
+    z-index: 1;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+  /* Title Styling */
+  .login-title {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Form Input Group */
+  .input-group {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  /* Options and Links */
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .forgot-link, .register-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .forgot-link:hover, .register-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Login Button */
+  .btn-login {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-login:hover {
+    background: #0056b3;
+  }
+  
+  /* Register Text */
+  .register-text {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      .login-box {
+        width: 90%;
+        padding: 2rem;
+      }
+    }
+      
