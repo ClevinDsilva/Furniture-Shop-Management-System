@@ -13,23 +13,8 @@ A full-featured **MERN Stack** web application for managing a furniture store. T
 
 ## 📁 Project Structure
 
-Furniture-Shop-Management-System/
-├── backend/ # Node.js Express API
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ └── config/
-├── frontend/ # React App for User
-│ ├── components/
-│ ├── pages/
-│ ├── redux/
-│ └── utils/
-├── admin/ # React App for Admin Panel
-│ ├── components/
-│ ├── pages/
-│ └── utils/
-└── README.md # Project overview
+![image](https://github.com/user-attachments/assets/bf452bf2-182d-4e9b-b9d9-e51acda0a71d)
+
 
 
 ---
