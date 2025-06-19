@@ -66,10 +66,10 @@ git clone https://github.com/ClevinDsilva/Furniture-Shop-Management-System.git
 cd Furniture-Shop-Management-System
 cd backend
 npm install
-# Create a .env file and configure:
-# MONGO_URI=
-# JWT_SECRET=
-# PORT=
+Create a .env file and configure:
+MONGO_URI=
+JWT_SECRET=
+PORT=
 npm start
 
 
