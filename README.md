@@ -92,6 +92,8 @@ JWT Authentication
 
 # Project Doc
 
+[Clevin_Project_Final.pdf](https://github.com/user-attachments/files/20802947/Clevin_Project_Final.pdf)
+
 ![image](https://github.com/user-attachments/assets/cdcb4b78-7d8b-4739-bdbf-119a190e9634)
 ![image](https://github.com/user-attachments/assets/5599ed73-d850-47df-9b59-404f7ba7e340)
 ![image](https://github.com/user-attachments/assets/facb48e5-1f45-4b15-a0de-9e618e4da1fa)
@@ -105,4 +107,4 @@ JWT Authentication
 ![image](https://github.com/user-attachments/assets/30ab07c0-9697-44d5-85fd-e2fcbe482056)
 
 
-[Clevin_Project_Final.pdf](https://github.com/user-attachments/files/20802947/Clevin_Project_Final.pdf)
+
