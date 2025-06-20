@@ -48,6 +48,7 @@ A full-featured **MERN Stack** web application for managing a furniture store. T
 
 # bash
 git clone https://github.com/ClevinDsilva/Furniture-Shop-Management-System.git
+
 cd Furniture-Shop-Management-System
 cd backend
 npm install
