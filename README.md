@@ -8,15 +8,6 @@ A full-featured **MERN Stack** web application for managing a furniture store. T
 - **Backend:** Node.js, Express.js, MongoDB, Mongoose
 - **Authentication:** JWT (JSON Web Tokens)
 - **Database:** MongoDB (NoSQL)
-
----
-
-## 📁 Project Structure
-
-![image](https://github.com/user-attachments/assets/bf452bf2-182d-4e9b-b9d9-e51acda0a71d)
-
-
-
 ---
 
 ## ✨ Features
